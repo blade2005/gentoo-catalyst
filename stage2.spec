@@ -1,0 +1,10 @@
+subarch: amd64
+target: stage2
+version_stamp: 2020.09
+rel_type: default
+profile: default/linux/amd64/17.1
+snapshot: 2020.09
+source_subpath: default/stage1-amd64-2020.09
+compression_mode: pixz_x
+portage_confdir: /etc/portage
+portage_prefix: releng
