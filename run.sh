@@ -10,7 +10,7 @@ wget -i - -B https://gentoo.osuosl.org/releases/amd64/autobuilds/ -O $BASE_DIR/s
 catalyst -s $(date +%Y.%m)
 
 sed -e "s~@REPO_DIR@.*~$(pwd)/portage~g" -e "s~@TIMESTAMP@~$(date +%Y.%m)~g" stage*.spec -i
-
+catalyt -P -f stage1.spec
 catalyst -f stage1.spec && \
 catalyst -f stage2.spec && \
 catalyst -f stage3.spec && \
